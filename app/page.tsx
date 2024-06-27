@@ -1,10 +1,14 @@
-import Image from "next/image";
+import { HeroParallax } from "@/components/ui/HeroParallax";
+import { featureData } from "@/data";
+import { KeyFeatures } from "@/components/home/KeyFeatures";
+import { GettingStarted } from "@/components/home/GettingStarted";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-2xl text-bold text-sky-300">SG Hub</h1>
-      <Image src="/logo_transparent.png" alt="log" width={220} height={220} />
-    </main>
+    <>
+      <HeroParallax products={featureData} />
+      <KeyFeatures />
+      <GettingStarted />
+    </>
   );
 }

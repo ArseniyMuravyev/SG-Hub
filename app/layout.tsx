@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Roboto_Flex } from "next/font/google";
 import "./globals.css";
-
-const robotoFlex = Roboto_Flex({ subsets: ["latin"], display: "swap" });
+import { NextAuthProvider } from "@/components/providers/NextAuthProvider";
+import { Layout } from "@/components/layout/Layout";
+import { roboto_flex } from "./fonts";
 
 export const metadata: Metadata = {
   title: "SG Hub",
@@ -16,7 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={robotoFlex.className}>{children}</body>
+      <body className={`${roboto_flex.className} bg-black`}>
+        <NextAuthProvider>
+          <Layout>
+            {children}
+            <div id="modals" />
+          </Layout>
+        </NextAuthProvider>
+      </body>
     </html>
   );
 }
