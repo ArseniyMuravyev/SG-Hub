@@ -1,6 +1,10 @@
-import { FC } from "react";
+import { NextPage } from "next";
 
-const page: FC = () => {
-  return <div>forgot password</div>;
+const page: NextPage = () => {
+  return (
+    <>
+      <h1>forgot password</h1>
+    </>
+  );
 };
 export default page;

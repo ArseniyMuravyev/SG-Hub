@@ -1,6 +1,11 @@
-import { FC } from "react";
+import { NextPage } from "next";
 
-const page: FC = () => {
-  return <div>register</div>;
+const page: NextPage = () => {
+  return (
+    <>
+      <h1>register</h1>
+    </>
+  );
 };
+
 export default page;

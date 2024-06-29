@@ -1,7 +1,7 @@
 import { FriendsList } from "@/components/friends/FriendsList";
-import { FC } from "react";
+import { NextPage } from "next";
 
-const page: FC = () => {
+const page: NextPage = () => {
   return (
     <>
       <h1 className="heading mb-4 md:mb-8">Friends</h1>

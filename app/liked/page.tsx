@@ -1,10 +1,10 @@
-import { FC } from "react";
+import { NextPage } from "next";
 
-const page: FC = () => {
+const page: NextPage = () => {
   return (
-    <div>
+    <>
       <h1>Liked</h1>
-    </div>
+    </>
   );
 };
 export default page;

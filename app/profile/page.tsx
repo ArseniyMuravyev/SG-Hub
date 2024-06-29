@@ -1,8 +1,12 @@
 import { Profile } from "@/components/profile/Profile";
-import { FC } from "react";
+import { NextPage } from "next";
 
-const page: FC = () => {
-  return <Profile name="My" desc="Welcome to your personalized profile page" />;
+const page: NextPage = () => {
+  return (
+    <>
+      <Profile name="My" desc="Welcome to your personalized profile page" />
+    </>
+  );
 };
 
 export default page;

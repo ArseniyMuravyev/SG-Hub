@@ -53,6 +53,9 @@ const handler = NextAuth({
             email: extendedProfile?.email,
             username: extendedProfile?.name?.replace(" ", "").toLowerCase(),
             image: extendedProfile?.picture,
+            numberOfFriends: 0,
+            numberOfPosts: 0,
+            registrationDate: new Date().toLocaleDateString(),
           });
         }
 

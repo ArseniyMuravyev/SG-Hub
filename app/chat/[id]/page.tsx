@@ -1,11 +1,11 @@
-import { FC } from "react";
 import { Chat } from "@/components/chat/Chat";
+import { NextPage } from "next";
 
-const page: FC = () => {
+const page: NextPage = () => {
   return (
-    <div>
+    <>
       <Chat />
-    </div>
+    </>
   );
 };
 export default page;

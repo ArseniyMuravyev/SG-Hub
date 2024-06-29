@@ -13,6 +13,18 @@ const UserSchema = new Schema({
   image: {
     type: String,
   },
+  numberOfFriends: {
+    type: Number,
+    required: true,
+  },
+  registrationData: {
+    type: Date,
+    required: true,
+  },
+  numberOfPosts: {
+    type: Number,
+    required: true,
+  },
 });
 
 const User = models.User || model("User", UserSchema);

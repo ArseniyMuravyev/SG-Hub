@@ -3,8 +3,6 @@ import Link from "next/link";
 import { LuShare2 } from "react-icons/lu";
 import { lato } from "@/app/fonts";
 
-console.log(lato);
-
 export const Logo: FC = () => {
   return (
     <Link href="/" className="flex gap-2 items-center">

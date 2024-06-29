@@ -40,3 +40,9 @@ export type ProviderName = "google" | "github" | "yandex";
 export type ProviderIcon = {
   [key in ProviderName]: ReactElement;
 };
+
+export type User = {
+  id: string;
+  name: string;
+  role: string;
+};

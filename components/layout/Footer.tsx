@@ -3,7 +3,7 @@ import { FC } from "react";
 
 export const Footer: FC = () => {
   return (
-    <footer className="p-8 flex justify-between items-center gap-4 px-6 md:px-12  w-full">
+    <footer className="flex justify-between items-center gap-4 px-6 md:px-12  w-full mt-auto">
       <p className="text-white">©SG Hub 2024</p>
       <div className="flex gap-2 items-center">
         {footerData.map((item) => (

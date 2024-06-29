@@ -63,7 +63,6 @@ export const HeroParallax = ({ products }: { products: FeatureData[] }) => {
           translateY,
           opacity,
         }}
-        className=""
       >
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
           {firstRow.map((product) => (
@@ -157,6 +156,7 @@ export const ProductCard = ({
         width="600"
         className="object-cover object-center absolute h-full w-full inset-0 rounded-xl"
         alt={product.title}
+        priority
       />
       <div className="absolute inset-0 h-full w-full opacity-0 bg-black pointer-events-none"></div>
     </motion.div>
