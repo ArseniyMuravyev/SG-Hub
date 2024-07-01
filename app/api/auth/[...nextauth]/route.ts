@@ -1,4 +1,4 @@
-import User from "@/models/user";
+import { User } from "@/models/user";
 import { connectToDb } from "@/utils/database";
 import { Profile } from "next-auth";
 import NextAuth from "next-auth/next";

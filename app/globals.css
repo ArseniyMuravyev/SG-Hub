@@ -16,6 +16,17 @@
 
 @layer utilities {
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center text-white;
+    @apply font-bold text-3xl md:text-5xl text-center text-white;
   }
+  .section {
+    @apply mt-8 md:mt-16 w-full;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }

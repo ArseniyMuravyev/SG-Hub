@@ -18,7 +18,7 @@ export const Lamp = () => {
           }}
           className="bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text heading tracking-tight text-transparent"
         >
-          Let's get started
+          Let&apos;s get started
         </motion.h1>
         <Link
           href="/register"

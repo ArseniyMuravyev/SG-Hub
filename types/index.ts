@@ -7,18 +7,8 @@ export type CardData = {
   icon: ReactElement;
 };
 
-export type FeatureData = {
-  title: string;
-  thumbnail: string;
-};
-
 export type MenuData = {
   title: string;
-};
-
-export type FooterData = {
-  link: string;
-  icon: ReactElement;
 };
 
 export interface FriendData {
@@ -35,14 +25,15 @@ export type NextAuthSession = Session & {
   } & Session["user"];
 };
 
-export type ProviderName = "google" | "github" | "yandex";
-
-export type ProviderIcon = {
-  [key in ProviderName]: ReactElement;
-};
+export type ProviderIcons = Record<string, ReactElement>;
 
 export type User = {
   id: string;
   name: string;
   role: string;
+};
+
+export type LinkWithIcon = {
+  icon: ReactElement;
+  link: string;
 };

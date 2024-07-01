@@ -1,16 +1,12 @@
 import { FC } from "react";
-import { TextGenerateEffect } from "../ui/TextGenerateEffect";
 import { GlareCard } from "../ui/GlareCard";
 import { cardData } from "@/data";
 
 export const KeyFeatures: FC = () => {
   return (
-    <section>
-      <TextGenerateEffect
-        words="What are the Key Features of SG Hub?"
-        className="heading mt-8"
-      />
-      <div className="flex gap-8 md:gap-16 items-center mt-8 md:mt-16">
+    <section className="section">
+      <h2 className="heading">What are the Key Features of SG Hub?</h2>
+      <ul className="flex flex-col lg:flex-row gap-8 md:gap-16 items-center mt-8 md:mt-16">
         {cardData.map((card) => (
           <GlareCard
             className="flex flex-col gap-3 justify-center items-center px-3"
@@ -23,7 +19,7 @@ export const KeyFeatures: FC = () => {
             <p className="text-center">{card.description}</p>
           </GlareCard>
         ))}
-      </div>
+      </ul>
     </section>
   );
 };

@@ -1,11 +1,17 @@
-import { LuUserCircle2, LuShare, LuTrophy } from "react-icons/lu";
+import {
+  LuUserCircle2,
+  LuShare,
+  LuTrophy,
+  LuUsers2,
+  LuHeart,
+  LuBookmark,
+} from "react-icons/lu";
 import {
   CardData,
-  FeatureData,
   MenuData,
-  FooterData,
+  LinkWithIcon,
   FriendData,
-  ProviderIcon,
+  ProviderIcons,
 } from "@/types";
 import {
   FaGithub,
@@ -14,21 +20,6 @@ import {
   FaYandex,
   FaInstagram,
 } from "react-icons/fa";
-
-export const featureData: FeatureData[] = [
-  {
-    title: "Fast and Light",
-    thumbnail: "/fast-and-light.png",
-  },
-  {
-    title: "Secure and Private",
-    thumbnail: "/secure-and-private.png",
-  },
-  {
-    title: "Easy of Use",
-    thumbnail: "/easy-of-use.png",
-  },
-];
 
 export const cardData: CardData[] = [
   {
@@ -68,7 +59,7 @@ export const menuData: MenuData[] = [
   },
 ];
 
-export const footerData: FooterData[] = [
+export const footerData: LinkWithIcon[] = [
   {
     link: "https://github.com/ArseniyMuravyev/sg-hub",
     icon: <FaGithub />,
@@ -156,8 +147,23 @@ export const friendsData: FriendData[] = [
   },
 ];
 
-export const providerIcons: ProviderIcon[] = {
+export const providerIcons: ProviderIcons = {
   google: <FaGoogle />,
   github: <FaGithub />,
   yandex: <FaYandex />,
 };
+
+export const navLinks: LinkWithIcon[] = [
+  {
+    icon: <LuUsers2 size={20} />,
+    link: "friends",
+  },
+  {
+    icon: <LuHeart size={20} />,
+    link: "liked",
+  },
+  {
+    icon: <LuBookmark size={20} />,
+    link: "saved",
+  },
+];

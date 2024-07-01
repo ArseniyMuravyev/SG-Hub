@@ -1,13 +1,13 @@
 import { FC } from "react";
 
-interface IProfile {
+interface Props {
   name: string;
   desc: string;
 }
 
-export const Profile: FC<IProfile> = ({ name, desc }) => {
+export const Profile: FC<Props> = ({ name, desc }) => {
   return (
-    <section className="w-full">
+    <section className="section">
       <h1 className="text-left">
         <span className="">{name} Profile</span>
       </h1>

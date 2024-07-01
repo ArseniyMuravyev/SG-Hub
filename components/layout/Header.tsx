@@ -1,9 +1,8 @@
 import { FC } from "react";
 import { NavLinksList } from "./NavLinksList";
 import { Logo } from "../common/Logo";
-import { MenuButton } from "../buttons/MenuButton";
-import { TryNowButton } from "../buttons/TryNowButton";
 import { SpotlightBackground } from "@/components/home/SpotlightBackground";
+import { MenuButtons } from "./MenuButtons";
 
 export const Header: FC = () => {
   return (
@@ -11,10 +10,7 @@ export const Header: FC = () => {
       <SpotlightBackground />
       <Logo />
       <NavLinksList />
-      <div className="flex gap-6 items-center">
-        <MenuButton />
-        <TryNowButton />
-      </div>
+      <MenuButtons />
     </header>
   );
 };

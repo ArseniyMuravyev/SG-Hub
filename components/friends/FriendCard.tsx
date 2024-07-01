@@ -18,8 +18,8 @@ export const FriendCard: FC<Props> = ({ friend }) => {
 
   return (
     <>
-      <div
-        className="flex items-center bg-black px-4 md:px-8 py-2 md:py-4 rounded-xl text-white flex-col justify-center gap-4 border border-white-1 w-1/2 mx-auto cursor-pointer"
+      <article
+        className="flex items-center bg-black px-4 md:px-8 py-2 md:py-4 rounded-xl text-white flex-col justify-center gap-4 border border-white-1 lg:w-1/2 w-full mx-auto cursor-pointer"
         onClick={handleOpen}
       >
         <div className="flex gap-4 justify-between items-center w-full">
@@ -32,7 +32,7 @@ export const FriendCard: FC<Props> = ({ friend }) => {
             className="object-cover object-center rounded-full"
           />
         </div>
-      </div>
+      </article>
       {isShow && <FriendModal friend={friend} onClose={handleClose} />}
     </>
   );
