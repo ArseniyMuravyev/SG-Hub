@@ -1,3 +1,5 @@
+"use client";
+
 import { FC } from "react";
 import { NextAuthSession } from "@/types";
 import { useSession } from "next-auth/react";
