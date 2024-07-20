@@ -13,8 +13,8 @@
   },
   "lint-staged": {
     "*.(js|jsx|ts|tsx)": [
-      "yarn format",
-      "git add"
+      "git add",
+      "yarn format"
     ]
   },
   "dependencies": {

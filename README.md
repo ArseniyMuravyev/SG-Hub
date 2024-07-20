@@ -1,4 +1,4 @@
-# TodoIt!
+# SG Hub 
 
 ## Technology stack
 
