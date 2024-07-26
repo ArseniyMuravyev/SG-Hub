@@ -1,10 +1,10 @@
-import { LoginForm } from "@/components/login/LoginForm";
 import { NextPage } from "next";
+import { AuthForm } from "@/components/auth/AuthForm";
 
 const page: NextPage = () => {
   return (
     <>
-      <LoginForm />
+      <AuthForm />
     </>
   );
 };

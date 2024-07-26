@@ -6,7 +6,7 @@ export const KeyFeatures: FC = () => {
   return (
     <section className="section">
       <h2 className="heading">What are the Key Features of SG Hub?</h2>
-      <ul className="flex flex-col lg:flex-row gap-8 md:gap-16 items-center mt-8 md:mt-16">
+      <ul className="w-full flex flex-col lg:flex-row gap-8 md:gap-16 items-center justify-center mt-8 md:mt-16">
         {cardData.map((card) => (
           <GlareCard
             className="flex flex-col gap-3 justify-center items-center px-3"

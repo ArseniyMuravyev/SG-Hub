@@ -43,7 +43,7 @@ export const cardData: CardData[] = [
 
 export const menuData: MenuData[] = [
   {
-    title: "home",
+    title: "",
   },
   {
     title: "profile",

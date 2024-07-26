@@ -1,5 +1,6 @@
 import { footerData } from "@/data";
 import { FC } from "react";
+import { OuterLink } from "../common/OuterLink";
 
 export const Footer: FC = () => {
   return (
@@ -7,14 +8,12 @@ export const Footer: FC = () => {
       <p className="text-white">©SG Hub 2024</p>
       <ul className="flex gap-2 items-center">
         {footerData.map((item) => (
-          <li
+          <OuterLink
             key={item.link}
-            className="bg-white rounded-full p-4 hover:bg-black hover:text-white transition-colors duration-300 z-10 size-12"
-          >
-            <a href={item.link} target="_blank">
-              {item.icon}
-            </a>
-          </li>
+            link={item.link}
+            icon={item.icon}
+            className="size-12"
+          />
         ))}
       </ul>
     </footer>

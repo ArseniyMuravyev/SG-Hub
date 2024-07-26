@@ -36,7 +36,7 @@ export const Modal: FC<Props> = ({ title, onClose, children }) => {
         className="fixed w-full h-full inset-0 bg-black bg-opacity-50 z-20"
         onClick={onClose}
       />
-      <div className="bg-black border border-white-1 z-50 rounded-lg shadow-lg p-6 w-full max-w-xl relative h-1/3 text-white">
+      <div className="bg-black border border-white-1 z-50 rounded-xl shadow-lg p-6 w-full max-w-xl relative h-1/3 text-white">
         <h3 className="text-xl font-bold text-center">{title}</h3>
         <button
           className="text-gray-500 hover:text-gray-700 absolute top-[-1.5rem] right-[-1.5rem] text-white"
